@@ -1,0 +1,157 @@
+/* Body Fonts link*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* ----------------
+For Heading Font link
+----------------- */
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+/* Body Style */
+body
+{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body h2
+{
+    font-size: 28px;
+}
+/* Style for header section */
+
+
+
+/* -----------------
+Full Header Container Style 
+---------------------*/
+.head-container:hover .half-width>img
+{
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+header
+{
+    background-color: #2D25A0;
+    height: 677px;
+    overflow: auto;
+    padding-left: 156px;
+
+}
+.top-head
+{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 124px;
+    margin-top: 40px;
+}
+/*---------------------------- 
+login button style applied 
+------------------------------*/
+.login-button
+{
+    background-color: #E02C6D;
+    color: white;
+    width: 123px;
+    height: 44px;
+    border: 0;
+    font-size: 16px;
+}
+/* login button effect */
+.login-button:active{
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+}
+
+/* Style for bottom header */
+.bottom-head
+{
+    display: flex;
+    margin-top: 60px;
+}
+.bottom-head h1
+{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: white;
+    font-size: 64px;
+    font-weight: 700;
+}
+.half-width
+{
+    width: 50%;
+}
+.half-width img
+{
+    width: 556.01px;
+    height: 438px;
+}
+
+/*--------------------
+ styles for main section 
+ -------------------------*/
+main
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.container
+{
+    width: 1050px;
+}
+.players
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+ .player
+ {
+     width: 350px;
+     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+     border-radius: 10px;
+     padding: 15px;
+     text-align: justify;
+     margin-right: 30px;
+     margin-top: 30px;
+ }
+ .players img
+ {
+     margin: 0 auto;
+     width: 100%;
+     border-radius: 10px;
+ }
+ .container .players .player:hover img
+ {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+ }
+
+ /* ---------------------
+ Styles for Footer Tag
+ --------------------- */
+
+footer
+{
+    margin-top: 150px;
+    text-align: center;
+}
+footer img
+{
+    width: 483.87px;
+    height: 110px;
+}
+.icons
+{
+    margin-left: 97px;
+}
+.fa-brands
+{
+    font-size: 32px;
+    margin-right: 32px;
+}
+footer small
+{
+    margin-left: 76px;
+    margin-top: 20px;
+}
