@@ -34,6 +34,7 @@ header
     height: 677px;
     overflow: auto;
     padding-left: 156px;
+    margin-bottom: 25px;
 
 }
 .top-head
@@ -104,6 +105,7 @@ main
 {
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    justify-content: center;
 }
  .player
  {
@@ -156,3 +158,129 @@ footer small
     margin-left: 76px;
     margin-top: 20px;
 }
+
+/* ------------------------
+Style for Matches section
+----------------------- */
+
+.full-round
+{
+    display: flex;
+    justify-content: space-between
+}
+.round
+{
+    width: 400px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    border-radius: 10px;
+}
+.round-title
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.matches
+{
+    margin-top: 60px;
+}
+.match-title
+{
+    text-align: center;
+    font-size: 30px;
+}
+.match-sub
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-type
+{
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+    margin-right: 20px;
+}
+.last-btn
+{
+    background-color: blue;
+    margin: 0;
+}
+.team
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.team-no
+{
+    color: blue;
+    font-weight: 900;
+}
+.one-team
+{
+    display: flex;
+    align-items: center;
+}
+
+/*------------------------ 
+media query for responsive mobile screen
+-------------------------- */
+
+/* For Top Portion */
+@media (max-width: 640px) {
+    .header{
+        height: auto;
+    }
+    .top-head{
+        display: grid;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .bottom-head, .half-width{
+        display: grid;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .half-width h1
+    {
+        font-size: 36px;
+    }
+    .half-width img {
+        width: 329px;
+        height: 259.17px;
+        margin-top: 50px;
+    }
+    /* for main portion */
+    .players
+    {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    /* for matches option */
+    .full-round
+    {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+    .round{
+        margin-bottom: 20px;
+    }
+    /* for footer */
+    footer div, footer img{
+        width: 80%;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+
+
